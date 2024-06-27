@@ -128,7 +128,16 @@ fig4.update_layout(
     xaxis_title='Height (CM)', 
     yaxis_title='Weight (KG)',
     
-    legend=dict(title_font=dict(color='#31333F')), # Legend color
+    legend=dict(
+        title_font=dict(size=16, color='#31333F'),  # Font size and color for the legend title
+        font=dict(size=14, color='#31333F'),
+        bgcolor='rgba(255, 255, 255, 0.5)',  # Background color of the legend
+        bordercolor="RebeccaPurple",  # Border color of the legend
+        borderwidth=2,  # Border width of the legend
+        itemclick="toggleothers",  # Allow toggling of other legend items on click
+        itemdoubleclick="toggle",  # Allow toggling of current legend item on double click
+        itemsizing="constant",
+        ), # Legend color
     
     xaxis=dict(tickfont=dict(color='#31333F'), title_font=dict(color='#31333F')), # Set grid color, tick color, and width for x-axis
     yaxis=dict(tickfont=dict(color='#31333F'), title_font=dict(color='#31333F'), gridcolor='white', gridwidth=2), # Set grid color, tick color, and width for y-axis    
