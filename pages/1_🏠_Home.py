@@ -5,9 +5,9 @@ import plotly.express as px
 
 # Load the dataset with appropriate encoding handling
 try:
-    sp = pd.read_csv('../database/Student Attitude and Behavior.csv')
+    sp = pd.read_csv(r"./database/Student Attitude and Behavior.csv")
 except UnicodeDecodeError:
-    sp = pd.read_csv('../database/Student Attitude and Behavior.csv', encoding='ISO-8859-1')
+    sp = pd.read_csv(r"./database/Student Attitude and Behavior.csv", encoding='ISO-8859-1')
 
 # Set page config
 apptitle = 'Student Attitude and Behavior'
