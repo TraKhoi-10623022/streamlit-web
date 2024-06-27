@@ -115,7 +115,7 @@ with col1:
         hobbies_counts = filtered_sp['hobbies'].value_counts()
         hobbies_df = hobbies_counts.reset_index()
         hobbies_df.columns = ['Hobbies', 'Count']
-        st.image(image="C:\\Users\\XPS\\Downloads\\Screenshot_2024-06-24_151842-removebg-preview.png", width=400)
+        st.image(image=r"./pics/Screenshot_2024-06-24_151842-removebg-preview.png", width=400)
     else:
         st.write("")  # Add a space to position the warning message in the middle
         st.write('<p class="pulsate" style="text-align:center;"><span>⚠️</span> Please select at least one department</p>', unsafe_allow_html=True)

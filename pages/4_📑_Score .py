@@ -74,11 +74,11 @@ col1, col2 = st.columns([0.7, 0.3], gap="medium")
 with col1:
     mark_options = ["10th Mark", "12th Mark", "college mark"]
     selected_mark = st.selectbox("Types of mark:", options=mark_options)
-    st.image(image="C:\\Users\\XPS\\Downloads\\2e935d8c1322f3567bf6452b53b54634-removebg-preview (1).png", width=400)
+    st.image(image=r"./pics/2e935d8c1322f3567bf6452b53b54634-removebg-preview (1).png", width=400)
 
 # Image insertted in column 1
 with col2:
-    st.image(image="C:\\Users\\XPS\\Downloads\\Screenshot_2024-06-25_122902-removebg-preview.png", width=250)
+    st.image(image=r"./pics/Screenshot_2024-06-25_122902-removebg-preview.png", width=250)
 
     selected_daily = st.radio("Daily studying time", ('All', *sp['Daily studying time'].unique()), key='Daily studying time')
     if selected_daily == 'All':
@@ -126,7 +126,7 @@ with col1:
         ''',
         unsafe_allow_html=True
     )
-    st.image(image="C:\\Users\\XPS\\Downloads\\440217f82012557521491a7c81683697-removebg-preview.png", width=450)
+    st.image(image=r"./pics/440217f82012557521491a7c81683697-removebg-preview.png", width=450)
 
 with col2:
     # Calculate average mark based on 10th and 12th marks

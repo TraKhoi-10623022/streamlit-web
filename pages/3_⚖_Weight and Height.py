@@ -75,7 +75,7 @@ selected_stress_level = st.sidebar.radio("Stress Level:", stress_levels)
 
 col1, col2 = st.columns([0.6, 0.4], gap="medium")
 with col1:
-    st.image(image="C:\\Users\\XPS\\Downloads\\Screenshot_2024-06-25_120959-removebg-preview.png", width=450)
+    st.image(image=r"./pics/Screenshot_2024-06-25_120959-removebg-preview.png", width=450)
 
 with col2: 
     st.markdown(

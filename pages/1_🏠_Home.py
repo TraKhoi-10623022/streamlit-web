@@ -105,10 +105,10 @@ with col1:
 
     st.write('Nguyen Thien Van Khanh - 10623017👩🏻')
     st.write('Nguyenn Thi Tra Khoi - 10623022)👩🏻')
-    st.image(image="C:\\Users\\XPS\\Downloads\\47618cf8f33a2bfbac2fa643111d5ef8-removebg-preview.png", width=350)
+    st.image(image=r"./pics/47618cf8f33a2bfbac2fa643111d5ef8-removebg-preview.png", width=350)
 
 with col2:
-    st.image(image="C:\\Users\\XPS\\Downloads\\e923c7d1320f904bd720821ed25e774d-removebg-preview.png", width=400)
+    st.image(image=r"./pics/e923c7d1320f904bd720821ed25e774d-removebg-preview.png", width=400)
     
 st.subheader("🗒Introduction")
 
@@ -152,7 +152,7 @@ with col1:
 """, unsafe_allow_html=True)
     
 with col2:
-    st.image(image="C:\\Users\\XPS\\Downloads\\b13afc0e9a58d4d6a442a06cec85c07e-removebg-preview.png", width=400)
+    st.image(image=r"./pics/b13afc0e9a58d4d6a442a06cec85c07e-removebg-preview.png", width=400)
 
 
     st.markdown('<div class="footer">Made with ❤️ using Streamlit</div>', unsafe_allow_html=True)
