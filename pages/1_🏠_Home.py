@@ -124,7 +124,7 @@ with st.container():
     
 # Toggle switch to show/hide DataFrame
     if st.toggle("Show Data Frame"):
-        st.dataframe(data=sp[['Certification Course', 'Gender', 'Department', 'Height(CM)', 'Weight(KG)', '10th Mark', '12th Mark', 'college mark', 'hobbies', 'Daily studying time', 'prefer to study in', 'salary expectation', 'Do you like your degree?', 'willingness to pursue a career based on their degree  ', 'social medai & video', 'Travelling Time ']], width=1500, use_container_width=True) 
+        st.dataframe(data=sp[['Certification Course', 'Gender', 'Department', 'Height(CM)', 'Weight(KG)', '10th Mark', '12th Mark', 'College Mark', 'hobbies', 'Daily studying time', 'prefer to study in', 'salary expectation', 'Do you like your degree?', 'willingness to pursue a career based on their degree  ', 'social medai & video', 'Travelling Time ']], width=1500, use_container_width=True) 
 
 col1, col2 = st.columns([0.5, 0.5], gap="medium")
 with col1: 
