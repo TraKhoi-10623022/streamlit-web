@@ -30,7 +30,7 @@ page_bg_img = '''
     color: "black";
 }
 .title {
-    font-size: 5em;
+    font-size: 4.2em;
     font-weight: bold;
     color: "black";
 }
