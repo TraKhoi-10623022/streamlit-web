@@ -141,7 +141,7 @@ with col1:
 
 with col2:
     # Calculate average mark based on 10th and 12th marks
-    filtered_data['Average Mark'] = (filtered_data['10th Mark'] + filtered_data['12th Mark'] + filtered_data['college mark']) / 3
+    filtered_data['Average Mark'] = (filtered_data['10th Mark'] + filtered_data['12th Mark'] + filtered_data['College Mark']) / 3
 
     # Create violin chart with average mark
     fig3 = px.box(filtered_data, y="Average Mark", points="all", title="Violin Plot of Average Marks", hover_data=["10th Mark", "12th Mark"])
