@@ -53,6 +53,17 @@ page_bg_img = '''
     border-radius: 5px;
     cursor: pointer;
 }
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #34495e;
+    color: white;
+}
 </style>
 '''
 
@@ -69,10 +80,10 @@ else:
 
 st.markdown('<h1 class="title">🎈Score Statistics </h1>', unsafe_allow_html=True)
 
-# Selectbox for choosing mark type
+# Selectbox for choosing mark type``
 col1, col2 = st.columns([0.7, 0.3], gap="medium") 
 with col1:
-    mark_options = ["10th Mark", "12th Mark", "college mark"]
+    mark_options = ["10th Mark", "12th Mark", "College Mark"]
     selected_mark = st.selectbox("Types of mark:", options=mark_options)
     st.image(image=r"./pics/2e935d8c1322f3567bf6452b53b54634-removebg-preview (1).png", width=400)
 
@@ -159,3 +170,5 @@ with col2:
         ''',
         unsafe_allow_html=True
     )
+
+st.markdown('<div class="footer">Made with ❤️ using Streamlit</div>', unsafe_allow_html=True)

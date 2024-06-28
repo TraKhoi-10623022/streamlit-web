@@ -30,7 +30,7 @@ page_bg_img = '''
     color: "black";
 }
 .title {
-    font-size: 3em;
+    font-size: 5em;
     font-weight: bold;
     color: "black";
 }
@@ -49,6 +49,18 @@ page_bg_img = '''
     border-radius: 5px;
     cursor: pointer;
 }
+.stPageLink {
+    margin-top: 2em;
+}
+.stPageLink p{
+    margin-left: 0.2em;
+    font-size: 1.5em;
+}
+.stPageLink a{
+    border: 2px solid #FF6347;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+}
 </style>
 '''
 
@@ -64,7 +76,7 @@ def show_cover_page():
         </div>
         ''', unsafe_allow_html=True
     )
-    if st.page_link("pages/1_🏠_Home.py", label="Get Start"):
+    if st.page_link("pages/1_🏠_Home.py", label="Get Started", icon="🏠"):
         st.session_state.show_cover = False
 
 # Check if the cover page should be displayed or the main content
@@ -74,9 +86,4 @@ if 'show_cover' not in st.session_state:
 if st.session_state.show_cover:
     show_cover_page()
 else:
-    # Load the dataset with appropriate encoding handling
-    try:
-        sp = pd.read_csv('C:/Student Attitude and Behavior.csv')
-    except UnicodeDecodeError:
-        sp = pd.read_csv('C:/Student Attitude and Behavior.csv', encoding='ISO-8859-1')
-
+    show_cover_page()

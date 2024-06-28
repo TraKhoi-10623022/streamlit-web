@@ -104,7 +104,7 @@ with col1:
     st.write('**👥 Group information:**')
 
     st.write('Nguyen Thien Van Khanh - 10623017👩🏻')
-    st.write('Nguyenn Thi Tra Khoi - 10623022)👩🏻')
+    st.write('Nguyenn Thi Tra Khoi - 10623022👩🏻')
     st.image(image=r"./pics/47618cf8f33a2bfbac2fa643111d5ef8-removebg-preview.png", width=350)
 
 with col2:

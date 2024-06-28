@@ -80,6 +80,17 @@ page_bg_img = '''
     font-size: 1.1em;
     margin-top: 20px;
 }
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #34495e;
+    color: white;
+}
 </style>
 '''
 
@@ -175,3 +186,5 @@ if options:
     ''',
     unsafe_allow_html=True
 )
+
+st.markdown('<div class="footer">Made with ❤️ using Streamlit</div>', unsafe_allow_html=True)

@@ -53,6 +53,17 @@ page_bg_img = '''
     border-radius: 5px;
     cursor: pointer;
 }
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #34495e;
+    color: white;
+}
 </style>
 '''
 
@@ -130,7 +141,7 @@ fig4.update_layout(
     
     legend=dict(
         title_font=dict(size=16, color='#31333F'),  # Font size and color for the legend title
-        font=dict(size=14, color='#31333F'),
+        font=dict(size=12, color='#31333F'),
         bgcolor='rgba(255, 255, 255, 0.5)',  # Background color of the legend
         bordercolor="RebeccaPurple",  # Border color of the legend
         borderwidth=2,  # Border width of the legend
@@ -159,3 +170,5 @@ st.markdown(
     ''',
     unsafe_allow_html=True
 )
+
+st.markdown('<div class="footer">Made with ❤️ using Streamlit</div>', unsafe_allow_html=True)
